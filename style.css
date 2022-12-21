@@ -1,0 +1,257 @@
+:root {
+  background-color: #FFFFFF;
+  --background-dark: #1D1C1C;
+  --card: #F6F2EF;
+  --accent-magenta: #FF5678;
+  --accent-green: #149770;
+  --text-primary: #1D1C1C;
+  --text-secondary: #787878;
+  --text-reversed: #FFFFFF;
+/*   filter: invert(100%); */
+}
+
+p, a {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 100vh;  /* added to remove negative space on selection page */
+}
+
+.text-magenta{
+    color: var(--accent-magenta);
+}
+
+.title {
+
+  text-decoration: none;
+  font-weight: 900;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.nav-right a {
+  margin-left: 20px;
+}
+
+.link {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.link:hover {
+  border-bottom: 2px solid var(--accent-green);
+}
+
+.nav-btn {
+  background-color: var(--accent-magenta);
+  border-radius: 15px;
+  padding: 5px 20px;
+  color: var(--text-reversed);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: min(20px) 0;
+}
+
+.banner-left {
+  flex-basis: 50%;
+}
+
+.banner-right {
+  flex-basis: 50%;
+}
+
+.logo {
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 7vw;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  margin: 40px 0 32px 0;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 4vw;
+  margin: 40px 0 32px 0;
+}
+
+.search-bar {
+  display: flex;
+}
+
+input {
+  width: 217px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: var(--card);
+  border: none;
+  color: var(--text-secondary);
+  padding-left: 16px;
+  margin-right: 16px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-magenta);
+  border-radius: 50%;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  color: white;
+  text-decoration: none;
+}
+
+a i { /* anchor icons */
+  color: white;  
+}
+
+.about-container {
+  border-top: 2px solid #787878;
+  padding-bottom: 70px;
+}
+
+br {
+  margin: 10px;
+}
+
+p {
+  width: 70%;
+}
+
+p a { 
+  color: var(--accent-magenta);
+}
+
+.addy:hover {
+  color: var(--accent-green);
+}
+
+.offers-container {
+  border-top: 2px solid #787878;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.card-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  
+  margin-bottom: 50px;
+  width: 90%;  /* this is to make the selection page have rows of 3 rather than 4 */
+}
+
+.card {
+  height: 350px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-color: #F6F2EF;
+  border-radius: 10px;
+  margin: min(20px);
+  padding: 16px 40px;
+  flex: 1 1 30%;
+}
+
+.beanz {
+  height: 165px;
+  width: 225px;
+  object-fit: none;
+  object-position: 47% 52%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card h3 {
+  font-size: 16px;
+}
+
+.card a {
+  background-color: var(--accent-magenta);
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: var(--text-reversed);
+  text-decoration: none;
+  width: 60px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer {
+  bottom: 0%;
+  background-color: var(--background-dark);
+  color: var(--text-reversed);
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  width: auto;
+  margin: 16px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+}
+
+.git:hover {
+  color: var(--accent-green);
+}
+
+.tweet:hover {
+  color: #59A5D8;
+}
+
+.face:hover {
+  color: var(--accent-magenta);
+}

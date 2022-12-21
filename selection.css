@@ -1,0 +1,87 @@
+.selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sort a{
+  display: flex;
+  text-decoration: none;
+  margin-left: 24px;
+  background-color: var(--card);
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sort a i {
+  color: var(--text-primary);
+  margin-left: 32px;
+}
+/* only css god can judge me for trying da drop menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  z-index: 10;
+  border: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: auto;
+  text-decoration: none;
+  display: block;
+  width: 80px;
+}
+
+.dropdown-content a:hover {background-color: #c7c7c7}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* and with thy spirit, amen. */
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  width: 225px;
+  height: 30%;
+}
+
+.gray {
+  color: var(--text-secondary);
+  margin-top: 12px;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.tag {
+  background-color: var(--accent-green);
+  color: var(--text-reversed);
+  border-radius: 16px 0 0 16px;
+  padding: 8px 24px;
+  margin: none;
+  align-self: end;
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
