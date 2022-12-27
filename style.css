@@ -168,13 +168,16 @@ p a {
 }
 
 .card-area {
+/*   background-color: green; */
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
+  
   flex-flow: row wrap;
   
   margin-bottom: 50px;
-  width: 90%;  /* this is to make the selection page have rows of 3 rather than 4 */
+  width: 80%;  /* this is to make the selection page have rows of 3 rather than 4 */
 }
 
 .card {
@@ -189,14 +192,22 @@ p a {
   border-radius: 10px;
   margin: min(20px);
   padding: 16px 40px;
+  width: 60%;
   flex: 1 1 30%;
+  
+
+  /* I changed the 30% width to 30px*/
 }
 
 .beanz {
+  /* This is from Alex */
+/*   transform: rotate(90deg); */
+/*   width: 50%; */
+/*   height: auto; */
+  
   height: 165px;
   width: 225px;
-  object-fit: none;
-  object-position: 47% 52%;
+  object-fit: cover;
   border-radius: 10px;
   margin-top: 15px;
 }
@@ -207,6 +218,13 @@ p a {
 
 .card h3 {
   font-size: 16px;
+
+  /* This is from me */
+/*   margin: 0; */
+}
+
+a{
+  text-decoration: none;
 }
 
 .card a {
